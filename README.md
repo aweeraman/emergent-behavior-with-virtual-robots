@@ -21,8 +21,8 @@ $ source activate gazebo
 $ git clone git@github.com:erlerobot/gym-gazebo.git
 $ cd gym-gazebo
 $ pip install -e .
-$ cd gym_gazebo/envs/installation
-$ bash turtlebot_setup.bash
+$ pip install matplotlib
+$ bash gym_gazebo/envs/installation/turtlebot_setup.bash
 $ cd ../../../examples/turtlebot
 $ python circuit2_turtlebot_lidar_qlearn.py
 ```

@@ -22,6 +22,9 @@ $ git clone git@github.com:erlerobot/gym-gazebo.git
 $ cd gym-gazebo
 $ pip install -e .
 $ pip install matplotlib
+$ pip install -U wstool rosdep rosinstall rosinstall_generator rospkg catkin-pkg sphinx
+$ sudo rosdep init
+$ rosdep update
 $ bash gym_gazebo/envs/installation/turtlebot_setup.bash
 $ cd ../../../examples/turtlebot
 $ python circuit2_turtlebot_lidar_qlearn.py

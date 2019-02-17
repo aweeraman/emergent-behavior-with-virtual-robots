@@ -2,7 +2,7 @@
 
 # Installation on Arch Linux
 
-1. Install ROS
+1. Install ROS from AUR (which didn't exactly work)
 ```
 $ sudo pacman -S base-devel
 $ sudo pip install -U wstool rosdep rosinstall rosinstall_generator rospkg catkin-pkg sphinx
@@ -18,6 +18,28 @@ an older version. You may not need to do this by the time you read this:
 $ yay -S -f --mflags "--skipchecksums" ros-melodic-desktop-full
 $ pacman -U https://archive.archlinux.org/packages/c/cmake/cmake-3.12.3-1-x86_64.pkg.tar.xz
 ```
+
+Decided to scrap it and install from source instead.
+
+Delete all Arch packages:
+
+```
+$ for i in `pacman -Q | grep ros- | cut -d" " -f 1`; do echo $i; sudo pacman -Rns $i; done
+```
+
+# Install ROS from Source on Arch Linux
+
+1. Install dependencies
+
+```
+$ sudo pip install -U wstool rosdep rosinstall rosinstall_generator rospkg catkin-pkg sphinx
+```
+
+2. Initialize rosdep
+
+```
+$ 
+
 
 1. Install Gazebo
 ```

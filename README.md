@@ -38,7 +38,18 @@ $ sudo pip install -U wstool rosdep rosinstall rosinstall_generator rospkg catki
 2. Initialize rosdep
 
 ```
-$ 
+$ sudo rosdep init
+$ rosdep update
+```
+
+3. Create the catkin workspace
+
+```
+$ mkdir ~/ros_catkin_ws
+$ cd ~/ros_catkin_ws
+$ rosinstall_generator desktop_full --rosdistro melodic --deps --tar > melodic-desktop-full.rosinstall
+
+```
 
 
 1. Install Gazebo

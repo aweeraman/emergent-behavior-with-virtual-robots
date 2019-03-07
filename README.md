@@ -2,6 +2,14 @@
 
 # Installation on Arch Linux
 
+1. Install Docker
+```
+$ sudo pacman -S docker
+$ sudo usermod -aG docker $(whoami)
+$ sudo systemctl enable docker
+$ sudo systemctl start docker
+$ docker run hello-world
+
 1. Install ROS from AUR (which didn't exactly work)
 ```
 $ sudo pacman -S base-devel

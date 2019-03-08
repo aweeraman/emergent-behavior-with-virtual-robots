@@ -93,3 +93,4 @@ $ python circuit2_turtlebot_lidar_qlearn.py
 
 # References
 * https://github.com/erlerobot/gym-gazebo
+* https://piero.dev/2018/02/running-ros-on-arch-linux-the-easy-way-with-docker/

@@ -8,7 +8,7 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key 421C365BD9F
 RUN apt-get update && apt install -y ros-melodic-desktop-full python-rosinstall python-rosinstall-generator python-wstool python-pip build-essential sudo
 RUN rosdep init
 RUN useradd -d /home/ros -m ros -p ros -G sudo && echo "source /opt/ros/melodic/setup.bash" >> /home/ros/.bashrc && \
-    echo ros | passwd ros --stdin
+    echo "ros:ros" | chpasswd
 RUN cd /home/ros && \
     git clone https://github.com/erlerobot/gym-gazebo.git && \
     cd gym-gazebo && \

@@ -1,21 +1,16 @@
 # Project: Emergent Behavior with Virtual Robots
 
-# Steps to Install and Run
+# Installing ROS2
 
-## Install Docker
+[Setup instructions for Mac](https://index.ros.org/doc/ros2/Installation/Crystal/OSX-Install-Binary/)
+
+Additionly, the following had to be run in order to get the installation working:
+
 ```
-$ sudo pacman -S docker
-$ sudo usermod -aG docker $(whoami)
-$ sudo systemctl enable docker
-$ sudo systemctl start docker
-$ docker run hello-world
+$ brew install tinyxml2@6.2.0
 ```
 
-## Build Docker image and start the container
-```
-$ docker build -t ros .
-$ scripts/start-ros.sh
-```
+Disable anaconda if installed and use the system installed distribution of Python3.
 
 # References
 * https://github.com/erlerobot/gym-gazebo
